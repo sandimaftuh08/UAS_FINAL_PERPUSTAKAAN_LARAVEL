@@ -40,8 +40,8 @@ Sistem Informasi Perpustakaan merupakan aplikasi berbasis web yang dibangun meng
 |---|---|
 | Backend | Laravel 12, PHP 8.4 |
 | Database | MySQL |
-| Frontend | Blade, Bootstrap 5, HTML5, CSS3, JavaScript |
-| Tools | Laragon, Visual Studio Code, Git, GitHub |
+| Frontend | php, Blade, Bootstrap 5, HTML5, CSS3, JavaScript |
+| Tools | Laragon, Visual Studio Code, GitHub |
 
 ---
 
