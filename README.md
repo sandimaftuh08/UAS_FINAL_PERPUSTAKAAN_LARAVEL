@@ -1,4 +1,7 @@
-# 📚 UAS FINAL - Sistem Informasi Perpustakaan Berbasis Laravel
+# 📚 Sistem Informasi Perpustakaan Berbasis Laravel
+## Tugas Akhir - Ujian Akhir Semester (UAS) Pemrograman Website 2
+
+---
 
 ## 👨‍🎓 Identitas Mahasiswa
 
@@ -6,139 +9,88 @@
 |------------|------|
 | **Nama** | Ahmad Sandi Maftuh |
 | **NIM** | 60324010 |
-| **Mata Kuliah** | Pemrograman Web II |
+| **Mata Kuliah** | Pemrograman Website 2 |
+| **Kode MK** | INF2419 |
 | **Kelas** | A |
 | **Program Studi** | Informatika |
-| **Dosen Pengampu** | Bapak Reza Maulana M.Kom |
+| **Dosen Pengampu** | Mohammad Reza Maulana, M.Kom |
+| **Universitas** | UIN K.H. Abdurrahman Wahid Pekalongan |
 
 ---
 
-# 📖 Deskripsi Proyek
+## 📖 Deskripsi Proyek
 
-Sistem Informasi Perpustakaan merupakan aplikasi berbasis web yang dibangun menggunakan framework Laravel. Aplikasi ini bertujuan untuk membantu proses pengelolaan perpustakaan secara digital sehingga aktivitas pengelolaan data buku, anggota, kategori, penerbit, transaksi peminjaman, dan pengembalian dapat dilakukan dengan lebih mudah, cepat, dan efisien.
+Sistem Informasi Perpustakaan merupakan aplikasi berbasis web yang dibangun menggunakan framework **Laravel** dengan pola **MVC (Model-View-Controller)**. Aplikasi ini dikembangkan sebagai studi kasus berkelanjutan sepanjang perkuliahan Pemrograman Website 2, mencakup pengelolaan data buku, anggota, kategori, penerbit, hingga transaksi peminjaman dan pengembalian buku secara digital.
 
 ---
 
-# 🎯 Tujuan Proyek
+## 🎯 Tujuan Proyek
 
-- Mempermudah pengelolaan data perpustakaan.
-- Mengelola data buku secara digital.
+- Mempermudah pengelolaan data perpustakaan secara digital.
+- Mengelola data buku, kategori, dan penerbit.
 - Mengelola data anggota perpustakaan.
-- Mengelola transaksi peminjaman buku.
-- Mengelola transaksi pengembalian buku.
-- Menyajikan informasi dan laporan perpustakaan secara cepat dan akurat.
+- Mengelola transaksi peminjaman dan pengembalian buku.
+- Menyajikan dashboard statistik dan laporan secara cepat dan akurat.
 
 ---
 
-# 🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi yang Digunakan
 
-- Laravel 12
-- blade
-- PHP 8.4
-- MySQL
-- Bootstrap 5
-- HTML5
-- CSS3
-- JavaScript
-- Laragon
-- Visual Studio Code
-- Git
-- GitHub
+| Kategori | Teknologi |
+|---|---|
+| Backend | Laravel 12, PHP 8.4 |
+| Database | MySQL |
+| Frontend | Blade, Bootstrap 5, HTML5, CSS3, JavaScript |
+| Tools | Laragon, Visual Studio Code, Git, GitHub |
 
 ---
 
-# 📂 Struktur Folder
+## ✨ Fitur Sistem
 
-```
-app/
-bootstrap/
-config/
-database/
-public/
-resources/
-routes/
-storage/
-tests/
-vendor/
-```
+### 🔐 Authentication System
+- Register, Login, Logout
+- Middleware protecting routes
+- Password hashing (bcrypt)
 
----
+### 📘 Manajemen Buku (CRUD)
+- Tambah, Edit, Hapus Buku
+- Pencarian & Filter Buku per Kategori
 
-# ✨ Fitur Sistem
+### 🏷️ Manajemen Kategori
+- Tambah, Edit, Hapus Kategori
 
-## Dashboard
+### 🏢 Manajemen Penerbit
+- Tambah, Edit, Hapus Penerbit
 
-- Menampilkan jumlah buku
-- Menampilkan jumlah anggota
-- Menampilkan jumlah kategori
-- Menampilkan jumlah transaksi
+### 👥 Manajemen Anggota (CRUD)
+- Tambah, Edit, Hapus Anggota
+- Date picker untuk tanggal lahir
+- Validasi email & nomor telepon
+- Export data ke Excel
 
-### Manajemen Buku
+### 🔄 Manajemen Transaksi
+- Peminjaman buku (auto-generate kode transaksi, auto-hitung tanggal kembali +7 hari, update stok otomatis)
+- Pengembalian buku (perhitungan denda otomatis, update stok otomatis)
+- Riwayat transaksi
 
-- Tambah Buku
-- Edit Buku
-- Hapus Buku
-- Pencarian Buku
+### 📊 Dashboard
+- Statistics cards (jumlah buku, anggota, kategori, transaksi)
+- Chart transaksi & kategori buku
+- Data buku & anggota terpopuler
 
-### Manajemen Kategori
+### 🔎 Global Search
+- Pencarian lintas modul (buku, anggota, transaksi)
 
-- Tambah Kategori
-- Edit Kategori
-- Hapus Kategori
-
-### Manajemen Penerbit
-
-- Tambah Penerbit
-- Edit Penerbit
-- Hapus Penerbit
-
-### Manajemen Anggota
-
-- Tambah Anggota
-- Edit Anggota
-- Hapus Anggota
-- Export Data Excel
-
-### Manajemen Transaksi
-
-- Peminjaman Buku
-- Pengembalian Buku
-- Riwayat Transaksi
+### 🧾 Laporan Transaksi
+- Filter berdasarkan tanggal, status, dan anggota
+- Tampilan print-friendly
 
 ---
 
-# 💾 Database
+## 💾 Database
 
-Database yang digunakan pada aplikasi ini adalah **MySQL** dengan nama database:
-
-```
-uas_final_perpustakaan
-```
-
-Database digunakan untuk menyimpan seluruh data yang berkaitan dengan sistem, seperti:
-
-- Data Buku
-- Data Kategori
-- Data Penerbit
-- Data Anggota
-- Data Transaksi Peminjaman
-- Data Pengembalian
-- Data User
+Nama database:
 
 ---
 
-# 👨‍💻 Repository GitHub
-
-https://github.com/sandimaftuh08/UAS_FINAL_PERPUSTAKAAN_LARAVEL
-
----
-
-# 📄 Lisensi
-
-Proyek ini dibuat sebagai tugas **Ujian Akhir Semester (UAS)** Mata Kuliah **Pemrograman Web II** Program Studi **Informatika**.
-
----
-
-# 🙏 Ucapan Terima Kasih
-
-Terima kasih kepada dosen pengampu Mata Kuliah Pemrograman Web II yang telah memberikan bimbingan, ilmu, dan arahan selama proses pembelajaran sehingga proyek ini dapat diselesaikan dengan baik.
+## 📂 Struktur Folder
