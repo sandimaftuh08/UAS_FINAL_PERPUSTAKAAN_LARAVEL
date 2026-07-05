@@ -9,7 +9,7 @@
 | **Mata Kuliah** | Pemrograman Web II |
 | **Kelas** | A |
 | **Program Studi** | Informatika |
-| **Dosen Pengampu** | ................................ |
+| **Dosen Pengampu** | Bapak Reza Maulana M.Kom |
 
 ---
 
